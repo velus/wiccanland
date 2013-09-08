@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:id="@+id/home"
+            android:layout_alignLeft="@+id/hometext" android:layout_alignTop="@+id/imageView"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:id="@+id/messages" android:layout_toRightOf="@+id/home" android:layout_alignTop="@+id/home"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:id="@+id/profile" android:layout_toRightOf="@+id/messages" android:layout_alignTop="@+id/home"/>
+    <Button
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:id="@+id/settings"
+            android:layout_toRightOf="@+id/profile" android:layout_alignTop="@+id/home"/>
+    <TextView
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_logged_in"
+            android:id="@+id/welcome_logged_in" android:layout_alignParentRight="true" android:layout_alignTop="@+id/home"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="727dp"/>
+    <TextView
+            android:layout_width="323dp"
+            android:layout_height="351dp"
+            android:text="@string/homeinfo"
+            android:id="@+id/hometext"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="47dp" android:layout_alignParentTop="true"
+            android:layout_marginTop="92dp"/>
+    <ImageView
+            android:layout_width="48dp"
+            android:layout_height="46dp"
+            android:id="@+id/imageView"
+            android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+</RelativeLayout>
